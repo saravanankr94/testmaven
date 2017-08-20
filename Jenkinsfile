@@ -8,4 +8,5 @@ node {
   stage 'build 4'
   sh "${mvnHome}/bin/mvn -B verify"
   stage 'build 5'
+  sh './script.sh'
   }
