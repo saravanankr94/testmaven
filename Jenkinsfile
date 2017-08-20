@@ -7,4 +7,6 @@ node {
   def mvnHome = tool 'local_maven'
   stage 'build 4'
   sh "${mvnHome}/bin/mvn -B verify"
+  stage 'build 5'
+  ./script.sh
 }
